@@ -1,5 +1,5 @@
-import { businessList } from "./BusinessList.js";
-import { getAgents } from "./dataAccess.js";
+import { businessList, keyPressEvent } from "./BusinessList.js";
+
 
 const mainContainer = document.querySelector(".container");
 
@@ -9,4 +9,4 @@ const render = () => {
 
 render();
 
-console.log(getAgents());
+document.querySelector("#companySearch").addEventListener("keypress", keyPressEvent)
