@@ -1,4 +1,5 @@
 import { businessList } from "./BusinessList.js";
+import { getAgents } from "./dataAccess.js";
 
 const mainContainer = document.querySelector(".container");
 
@@ -7,3 +8,5 @@ const render = () => {
 }
 
 render();
+
+console.log(getAgents());

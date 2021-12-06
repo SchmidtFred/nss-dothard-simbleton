@@ -1,3 +1,5 @@
-.business {
+.business, .agent {
     border-bottom: inset 3px grey;
+    font-size: 1em;
+    font-weight: bold;
 }

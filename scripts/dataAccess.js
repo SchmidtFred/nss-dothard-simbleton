@@ -19,3 +19,13 @@ export const getListByIndustry = (indToFind) => {
 
     return businesses.filter(indMatch);
 };
+
+export const getAgents = () => {
+    return businesses.map((bus) => {
+        return {
+            fullName: `${bus.purchasingAgent.nameFirst} ${bus.purchasingAgent.nameLast}`,
+            company: bus.companyName,
+            phoneNumber: bus.phoneWork
+        }
+    });
+};
